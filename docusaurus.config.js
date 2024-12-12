@@ -86,9 +86,9 @@ const formatNavbarItem = (item, subnav = false) => {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: docusaurusData.title || "My Site",
-  tagline: docusaurusData.tagline || "Dinosaurs are cool",
-  url: docusaurusData.url || "https://tinasaurus.vercel.app/",
+  title: docusaurusData.title || "Bigscience",
+  tagline: docusaurusData.tagline || "Effortless & Intuitive Processing Data",
+  url: docusaurusData.url || "https://bigscience-docs-tinasaurus-bsp.vercel.app/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -125,7 +125,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: docusaurusData.title || "",
+        // title: docusaurusData?.title || "",
         logo: {
           alt: docusaurusData?.logo?.alt
             ? docusaurusData?.logo?.alt
@@ -140,7 +140,7 @@ const config = {
       },
       footer: {
         style: docusaurusData.footer?.style || "dark",
-        links: docusaurusData.footer?.links.map((item) => {
+        links: docusaurusData.footer?.links?.map((item) => {
           return formatFooterItem(item);
         }),
         copyright:
