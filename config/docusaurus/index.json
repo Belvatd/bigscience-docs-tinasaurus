@@ -4,7 +4,7 @@
     {
       "label": "Docs",
       "link": "doc",
-      "docLink": "docs/intro.mdx",
+      "docLink": "docs/start/app-requirements.mdx",
       "position": "left"
     },
     {

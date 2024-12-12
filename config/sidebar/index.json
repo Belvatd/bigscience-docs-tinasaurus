@@ -2,81 +2,73 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "document": "docs/intro.mdx",
-      "_template": "doc"
-    },
-    {
-      "title": "Tutorial - Basics",
-      "link": "generated",
-      "items": [
-        {
-          "document": "docs/tutorial-basics/create-a-page.mdx",
-          "_template": "doc"
-        },
-        {
-          "document": "docs/tutorial-basics/create-a-document.mdx",
-          "_template": "doc"
-        },
-        {
-          "document": "docs/tutorial-basics/create-a-blog-post.mdx",
-          "_template": "doc"
-        },
-        {
-          "document": "docs/tutorial-basics/deploy-your-site.mdx",
-          "_template": "doc"
-        },
-        {
-          "document": "docs/tutorial-basics/congratulations.mdx",
-          "_template": "doc"
-        }
-      ],
-      "_template": "category"
-    },
-    {
-      "title": "Tutorial - Extras",
-      "link": "generated",
-      "items": [
-        {
-          "document": "docs/tutorial-extras/manage-docs-versions.mdx",
-          "_template": "doc"
-        },
-        {
-          "document": "docs/tutorial-extras/translate-your-site.mdx",
-          "_template": "doc"
-        }
-      ],
-      "_template": "category"
-    },
-    {
-      "title": "Nested Link",
+      "title": "Start",
       "link": "none",
       "items": [
         {
-          "title": "Level 2",
+          "document": "docs/start/app-requirements.mdx",
+          "label": "",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/start/installation-guide.mdx",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/start/feature-list.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "Work",
+      "link": "none",
+      "items": [
+        {
+          "document": "docs/work/use-case.mdx",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/work/example-workflow.mdx",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/work/widget-library.mdx",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/work/add-on.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "Support",
+      "link": "none",
+      "items": [
+        {
+          "title": "Contact",
           "link": "none",
           "items": [
             {
-              "title": "Level 3",
-              "link": "none",
-              "items": [
-                {
-                  "document": "docs/test-page.mdx",
-                  "label": "",
-                  "_template": "doc"
-                }
-              ],
-              "_template": "category"
+              "document": "docs/support/contact/feedback.mdx",
+              "_template": "doc"
+            },
+            {
+              "document": "docs/support/contact/inquiry.mdx",
+              "_template": "doc"
+            },
+            {
+              "document": "docs/support/contact/upgrade-activation.mdx",
+              "_template": "doc"
             }
           ],
           "_template": "category"
         }
       ],
       "_template": "category"
-    },
-    {
-      "title": "Tina.io",
-      "href": "https://tina.io/",
-      "_template": "link"
     }
   ]
 }
