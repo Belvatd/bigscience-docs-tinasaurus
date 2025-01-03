@@ -39,6 +39,17 @@
       "link": "none",
       "items": [
         {
+          "title": "Example Workflow",
+          "link": "none",
+          "items": [
+            {
+              "document": "docs/work/Example Workflow/Workflow-A.mdx",
+              "_template": "doc"
+            }
+          ],
+          "_template": "category"
+        },
+        {
           "document": "docs/work/use-case.mdx",
           "_template": "doc"
         },
