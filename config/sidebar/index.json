@@ -11,16 +11,11 @@
           "_template": "doc"
         },
         {
-          "document": "docs/start/installation-guide.mdx",
-          "label": "",
-          "_template": "doc"
-        },
-        {
           "title": "Installation-Guide",
           "link": "none",
           "items": [
             {
-              "document": "docs/start/installation-guide.mdx",
+              "document": "docs/start/Installation Guide/Mac.mdx",
               "label": "Mac",
               "_template": "doc"
             },
