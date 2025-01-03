@@ -39,6 +39,10 @@
       "link": "none",
       "items": [
         {
+          "document": "docs/work/use-case.mdx",
+          "_template": "doc"
+        },
+        {
           "title": "Example Workflow",
           "link": "none",
           "items": [
@@ -56,10 +60,6 @@
             }
           ],
           "_template": "category"
-        },
-        {
-          "document": "docs/work/use-case.mdx",
-          "_template": "doc"
         },
         {
           "document": "docs/work/widget-library.mdx",
