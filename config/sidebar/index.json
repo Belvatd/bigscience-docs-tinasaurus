@@ -16,6 +16,18 @@
           "_template": "doc"
         },
         {
+          "title": "Installation-Guide",
+          "link": "none",
+          "items": [
+            {
+              "document": "docs/start/installation-guide.mdx",
+              "label": "Windows",
+              "_template": "doc"
+            }
+          ],
+          "_template": "category"
+        },
+        {
           "document": "docs/start/feature-list.mdx",
           "_template": "doc"
         }
