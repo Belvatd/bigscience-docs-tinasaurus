@@ -2,3 +2,42 @@
 title: Use Case
 ---
 
+BigScience adalah platform analisis data berbasis Python yang menyediakan analisis dan pemodelan data melalui widget dan alur kerja (workflow) berbasis drag-and-drop. Platform ini memudahkan pengguna dalam mengolah data besar, memahami pola serta melakukan analisis data dan machine learning tanpa memerlukan keterampilan coding. Platform BigScience dapat mendukung proses kebutuhan analisis dan pemodelan dari berbagai sektor industri. Berikut beberapa contoh penggunaan BigScience :  
+
+#### 1. Kesehatan (Healthcare)
+
+* Analisis Penyakit : 
+
+Mengidentifikasi pola penyebaran penyakit berdasarkan data pasien (misalnya, prediksi penyakit menggunakan data klinis). Anda dapat menggunakan k-Means Clustering atau Hierarchical Clustering untuk mengelompokkan pasien berdasarkan kesamaan gejala atau lokasi penyebaran penyakit. Kemudian gunakan algoritma klasifikasi seperti Decision Tree atau Logistic Regression untuk memprediksi penyakit berdasarkan atribut klinis.
+
+* Prediksi Kebutuhan Stok Obat:
+
+Menggunakan data historis untuk memprediksi kebutuhan stok obat di rumah sakit. Anda dapat menggunakan widget Time Series untuk memahami pola penggunaan obat berdasarkan waktu dan melakukan visualisasi tren menggunakan Line Plot atau Box Plot untuk mengidentifikasi puncak kebutuhan. Lalu menerapkan algoritma prediksi seperti Linear Regression atau Random Forest untuk memperkirakan kebutuhan obat di masa mendatang.
+
+#### 2. Pemasaran (Marketing)
+
+* Segmentasi Pelanggan: 
+
+Mengelompokkan pelanggan berdasarkan perilaku/pola pembelian untuk kampanye pemasaran yang lebih terarah dan efektif.  Anda dapat menggunakan data pelanggan seperti jumlah pembelian, preferensi produk, dan lokasi geografis. Kemudian melakukan clustering menggunakan k-Means untuk mengidentifikasi kelompok pelanggan dan menganalisis hasil pengelompokan pelanggan dengan visualisasi seperti Scatter Plot atau Heatmap.
+
+* Analisis Sentimen Media Sosial:
+
+Menyaring dan menganalisis ulasan atau komentar media sosial untuk memahami persepsi merek. Anda dapat menggunakan widget Sentiment Analysis untuk mengklasifikasikan komentar menjadi kategori seperti positif, negatif, atau netral. Hasil analisis ini dapat membantu memahami persepsi umum pengguna terhadap merek. Anda juga dapat menggunakan  k-Means Clustering atau Hierarchical Clustering  untuk mengelompokkan komentar berdasarkan tema atau pola tertentu. Misalnya, komentar terkait "harga" dapat dikelompokkan terpisah dari komentar tentang "layanan". Lalu untuk visualisasi Anda dapat menggunakan diagram batang atau pie chart untuk presentasi statistik sentimen (positif, negatif, netral) atau Scatter Plot untuk melihat distribusi ulasan berdasarkan sentimen.
+
+### 3. Governance
+
+* Analisis Fraud:
+
+Deteksi pola anomali dalam laporan keuangan pemerintah daerah atau kementerian. Anda dapat menggunakan widget visualisasi seperti Scatter Plot atau Box Plot untuk mendeteksi pola awal atau data ekstrem. Identifikasi anomali kasar berdasarkan distribusi nilai. Kemudian tambahkan widget Outlier Detection atau gunakan model berbasis clustering seperti k-Means untuk mengelompokkan data. Gunakan widget seperti Data Table untuk menampilkan hasil dan menyelidiki data yang terdeteksi sebagai anomali. Verifikasi hasil dengan membandingkan data transaksi tersebut dengan sumber lain atau laporan manual. Buat visualisasi dengan widget Scatter Plot atau Line Chart untuk menyajikan pola anomali secara jelas kepada pemangku kepentingan.
+
+#### 4. E-commerce 
+
+* Prediksi Harga produk (Tiket)
+
+Memprediksi harga tiket secara dinamis berdasarkan tren permintaan, penawaran, dan data historis penjualan. Anda dapat melakukan visualisasi data dengan widget Line Plot untuk mengamati tren harga berdasarkan waktu/musim. Gunakan Scatter Plot untuk melihat hubungan permintaan, penawaran, dan harga tiket. Kemudian pilih widget prediksi seperti Linear Regression / Random Forest untuk mengetahui hubungan antar variabel. Lalu evaluasi performa model dengan widget Test & Score dan gunakan widget Predict untuk menerapkan model pada data permintaan atau penawaran terkini. 
+
+#### 5. Keuangan (Finance)
+
+* Segmentasi Nasabah:
+
+Clustering data nasabah untuk membangun segmen berbasis kebiasaan transaksi atau profil risiko. Anda dapat menggunakan widget seperti Scatter Plot untuk memahami pola awal dan mendeteksi kemungkinan segmen. Lalu Tambahkan widget k-Means atau Hierarchical Clustering untuk melakukan segmentasi data. Tentukan jumlah klaster sesuai kebutuhan bisnis atau eksplorasi awal dengan mencoba beberapa angka klaster. Gunakan widget Silhouette Plot atau Data Table untuk mengevaluasi kualitas klaster dan memahami ciri khas masing-masing segmen. Analisis hasil untuk memastikan bahwa setiap segmen merepresentasikan kelompok dengan karakteristik unik, seperti pola transaksi tinggi atau profil risiko tertentu. Untuk visualisasi segmen dan membandingkan atribut antar kelompok.  Anda dapat menggunakan Box Plot, atau Bar Chart. 
