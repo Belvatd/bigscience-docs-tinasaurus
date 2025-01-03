@@ -39,7 +39,7 @@
       "link": "none",
       "items": [
         {
-          "title": "Example Workflow",
+          "title": "Work-Example Workflow",
           "link": "none",
           "items": [
             {
@@ -59,10 +59,6 @@
         },
         {
           "document": "docs/work/use-case.mdx",
-          "_template": "doc"
-        },
-        {
-          "document": "docs/work/example-workflow.mdx",
           "_template": "doc"
         },
         {
