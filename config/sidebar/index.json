@@ -75,10 +75,6 @@
             {
               "document": "docs/support/contact/inquiry.mdx",
               "_template": "doc"
-            },
-            {
-              "document": "docs/support/contact/upgrade-activation.mdx",
-              "_template": "doc"
             }
           ],
           "_template": "category"
