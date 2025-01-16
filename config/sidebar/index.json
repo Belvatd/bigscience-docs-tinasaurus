@@ -43,7 +43,7 @@
           "link": "none",
           "items": [
             {
-              "document": "docs/work/Example Workflow/Workflow-C.mdx",
+              "document": "docs/work/Example Workflow/Workflow-A.mdx",
               "_template": "doc"
             },
             {
@@ -51,7 +51,7 @@
               "_template": "doc"
             },
             {
-              "document": "docs/work/Example Workflow/Workflow-A.mdx",
+              "document": "docs/work/Example Workflow/Workflow-C.mdx",
               "_template": "doc"
             }
           ],
