@@ -2,23 +2,34 @@
 title: Example Workflow-2
 ---
 
-## Goals : 
+## **Goals :**
 
-Melakukan analisis segmentasi pelanggan berasarkan korelasi batas kredit pelanggan (LIMIT\_BAL) terhadap status keterlambatan pembayaran. 
+Melakukan analisis segmentasi pelanggan berasarkan korelasi batas kredit pelanggan (LIMIT\_BAL) terhadap status keterlambatan pembayaran.
 
-### Steps : 
+![](/img/Workflow/Workflow-2/EX2-1.png)
 
-1. Unggah sumber data menggunakan Widget File, CSV File Import maupun widget lainnya. Klik widget File >Input File > Set Columns > Klik tombol Apply.
-2. Pilih column yang relevan seperti LIMIT\_BALANCE, SEX, EDU, MARRIAGE, AGE, PAY\_0, PAY\_1, PAY\_2, PAY\_3, BILL\_AMT1, BILL\_AMT2, BILL\_AMT3. Anda dapat menghilangkan column yang tidak digunakan dengan menekan tombol .
-3. Gunakan Widget Impute untuk menghilangkan instance yang kosong. Klik widget Impute > pilih Remove instances with unknown values pada Default Method. Dengan langkah ini, hanya instance yang memiliki data lengkap yang akan digunakan dalam analisis.
-4. Gunakan widget Correlation untuk mengidentifikasi hubungan antara LIMIT\_BAL dan variabel keterlambatan pembayaran (PAY\_0, PAY\_1, dll.). Korelasi positif menunjukkan bahwa pelanggan dengan batas kredit rendah cenderung lebih sering terlambat membayar. Sebaliknya, korelasi negatif mengindikasikan pelanggan dengan batas kredit tinggi cenderung membayar tepat waktu.
-5. Gunakan widget Scatter Plot untuk memvisualisasikan pola hubungan antara LIMIT\_BAL dan status keterlambatan pembayaran. Atur:
-   * Sumbu X: LIMIT\_BAL (Batas kredit pelanggan).
-   * Sumbu Y: Nilai keterlambatan pembayaran (PAY\_0, PAY\_1, dll.).
+### Steps :
 
-Hasil Analisis
+1. Unggah sumber data menggunakan **Widget File, CSV File Import **maupun widget lainnya. Klik widget **File >Input File > Set Columns > Klik tombol Apply.**\
+   ![](/img/Workflow/Workflow-2/EX2-2.png)
+2. Pilih column yang relevan seperti `LIMIT_BALANCE`,` SEX, EDU`, `MARRIAGE`, `AGE`, `PAY_0`, `PAY_1`, `PAY_2,` `PAY_3`, `BILL_AMT1`, `BILL_AMT2`,` BILL_AMT3`. Anda dapat menghilangkan *column* yang tidak digunakan dengan menekan **tombol \[\<].**\
+   \
+   ![](/img/Workflow/Workflow-2/EX2-3.png)
+3. Gunakan **Widget Impute** untuk menghilangkan *instance* yang kosong. Klik **widget Impute > pilih Remove instances with unknown values** pada **Default Method**. Dengan langkah ini, hanya *instance* yang memiliki data lengkap yang akan digunakan dalam analisis.\
+   \
+   ![](/img/Workflow/Workflow-2/EX2-4.png)
+4. Gunakan **widget Correlation** untuk mengidentifikasi hubungan antara `LIMIT_BAL` dan variabel keterlambatan pembayaran (`PAY_0`, `PAY_1`, dll.). Korelasi positif menunjukkan bahwa pelanggan dengan batas kredit rendah cenderung lebih sering terlambat membayar. Sebaliknya, korelasi negatif mengindikasikan pelanggan dengan batas kredit tinggi cenderung membayar tepat waktu.\
+   \
+   ![](/img/Workflow/Workflow-2/EX2-5.png)
+5. Gunakan **widget Scatter Plot** untuk memvisualisasikan pola hubungan antara `LIMIT_BAL` dan status keterlambatan pembayaran. Atur:
+   * Sumbu X: `LIMIT_BAL` (Batas kredit pelanggan).
+   * Sumbu Y: Nilai keterlambatan pembayaran (`PAY_0`, `PAY_1`, dll.).\
+     \
+     ![](/img/Workflow/Workflow-2/EX2-6.png)
 
-Sumbu X (LIMIT\_BAL): Batas kredit pelanggan.
+**Hasil Analisis**
+
+Sumbu X (`LIMIT_BAL`): Batas kredit pelanggan.
 Sumbu Y (Status Pembayaran): Nilai keterlambatan pembayaran, dengan angka-angka seperti -2, -1, 0, 1, 2, dll.
 
 * -2/-1: Kemungkinan pembayaran di muka atau tepat waktu.
@@ -27,13 +38,12 @@ Sumbu Y (Status Pembayaran): Nilai keterlambatan pembayaran, dengan angka-angka 
 
  
 
-Korelasi yang mungkin : 
+**Korelasi yang mungkin :**
 
-* LIMIT\_BAL Rendah & Keterlambatan Tinggi:  Pelanggan dengan batas kredit rendah lebih sering memiliki status keterlambatan positif (1, 2, dll.), menunjukkan bahwa mereka cenderung membayar terlambat.
-* LIMIT\_BAL Tinggi & Pembayaran Tepat Waktu: Pelanggan dengan batas kredit tinggi lebih sering memiliki status pembayaran tepat waktu (0) atau bahkan pembayaran lebih awal (-1 atau -2).
+* `LIMIT_BAL` **Rendah & Keterlambatan Tinggi**:  Pelanggan dengan batas kredit rendah lebih sering memiliki status keterlambatan positif (1, 2, dll.), menunjukkan bahwa mereka cenderung membayar terlambat.
+* `LIMIT_BAL` **Tinggi & Pembayaran Tepat Waktu:** Pelanggan dengan batas kredit tinggi lebih sering memiliki status pembayaran tepat waktu (0) atau bahkan pembayaran lebih awal (-1 atau -2).
 
-
-Insight : 
+**Insight :**
 
 * Titik-titik di scatter plot menunjukkan kluster pelanggan yang membayar tepat waktu versus yang terlambat membayar.
 * Pola ini dapat membantu dalam mengidentifikasi segmentasi pelanggan berdasarkan risiko keterlambatan pembayaran.
