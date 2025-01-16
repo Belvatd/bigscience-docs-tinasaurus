@@ -6,31 +6,29 @@ title: Example Workflow-3
 
 Melakukan analisis sebaran pekerjaan berdasarkan data alumni  kampus X. 
 
-#### &#x20;![](/img/Workflow/Workflow-3/EX3-1.png)  Steps : 
+#### &#x20;![](/img/Workflow/Workflow-3/EX3-1.png)
+
+#### &#x20;Steps : 
 
 1. Unggah sumber data menggunakan Widget File, CSV File Import maupun widget lainnya. Klik widget File >Input File > Set Columns > Klik tombol Apply untuk memuat data.\
-   \
    \
    ![](/img/Workflow/Workflow-3/EX3-2.png)
 2. Gunakan Widget Impute untuk menangani data kosong. Pilih opsi Remove instances with unknown values untuk menghapus baris dengan data tidak lengkap.  \
    Alternatif : Pilih metode imputasi lain untuk mengisi nilai yang hilang sesuai dengan kebutuhan analisis. \
    \
-   \
    ![](/img/Workflow/Workflow-3/EX3-3.png)
-3. Pilih column yang relevan seperti Location, Work\_Type, Full\_Time\_Remote, Job .  Anda dapat menghilangkan column yang tidak digunakan dengan menekan tombol \[\<] . 
+3. Pilih column yang relevan seperti Location, Work\_Type, Full\_Time\_Remote, Job .  Anda dapat menghilangkan column yang tidak digunakan dengan menekan tombol \[\<] . \
+   \
+   ![](/img/Workflow/Workflow-3/EX3-4.png)
 4. Lakukan eksplorasi data menggunakan widget Distributions, berikut analisis yang dapat Anda temukan: \
    \- Visualisasi jumlah alumni berdasarkan lokasi kerja. \
-   \
    \
    ![](/img/Workflow/Workflow-3/EX3-5.png)\
    \
    \- Visualisasi jumlah masing-masing jenis pekerjaan berdasarkan Work\_Type\
    \
-   \
-   ![](/img/Workflow/Workflow-3/EX3-6.png)\
-
+   ![](/img/Workflow/Workflow-3/EX3-6.png)
 5. Lakukan klasterisasi data alumni berdasarkan fitur Location & Work\_Typemenggunakan Widget k-Means. \
-   \
    \
    ![](/img/Workflow/Workflow-3/EX3-7.png)
 
@@ -47,7 +45,6 @@ Melakukan analisis sebaran pekerjaan berdasarkan data alumni  kampus X.
 Dengan 8 klaster, Silhouette Score mencapai 0.621, yang merupakan nilai tertinggi. Ini menunjukkan  segmentasi data yang optimal.
 
 6\. Kemudian dari klasterisasi tersebut divisualisasikan menggunakan widget Scatter Plot.\
-\
 \
 ![](/img/Workflow/Workflow-3/EX3-8.png)
 
