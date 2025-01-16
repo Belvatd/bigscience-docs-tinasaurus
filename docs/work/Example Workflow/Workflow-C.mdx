@@ -1,4 +1,65 @@
 ---
-title: Workflow C
+title: Example Workflow-3
 ---
 
+### Goals : 
+
+Melakukan analisis sebaran pekerjaan berdasarkan data alumni  kampus X. 
+
+#### &#x20;![](/img/Workflow/Workflow-3/EX3-1.png)  Steps : 
+
+1. Unggah sumber data menggunakan Widget File, CSV File Import maupun widget lainnya. Klik widget File >Input File > Set Columns > Klik tombol Apply untuk memuat data.\
+   \
+   ![](</img/Workflow/Workflow-3/EX3 - 2.png>)
+2. Gunakan Widget Impute untuk menangani data kosong. Pilih opsi Remove instances with unknown values untuk menghapus baris dengan data tidak lengkap.  \
+   Alternatif : Pilih metode imputasi lain untuk mengisi nilai yang hilang sesuai dengan kebutuhan analisis. \
+   \
+   \
+   ![](/img/Workflow/Workflow-3/EX3-3.png)
+3. Pilih column yang relevan seperti Location, Work\_Type, Full\_Time\_Remote, Job .  Anda dapat menghilangkan column yang tidak digunakan dengan menekan tombol \[\<] . 
+4. Lakukan eksplorasi data menggunakan widget Distributions, berikut analisis yang dapat Anda temukan: \
+   \- Visualisasi jumlah alumni berdasarkan lokasi kerja. \
+   \
+   \
+   ![](</img/Workflow/Workflow-3/EX3 - 5.png>)\
+   \
+   \- Visualisasi jumlah masing-masing jenis pekerjaan berdasarkan Work\_Type\
+   \
+   \
+   ![](</img/Workflow/Workflow-3/EX3 - 6.png>)
+5. Lakukan klasterisasi data alumni berdasarkan fitur Location & Work\_Typemenggunakan Widget k-Means. \
+   \
+   \
+   ![](</img/Workflow/Workflow-3/EX3 - 7.png>)
+
+##### Analisis Silhoutte Scores
+
+* 2 klaster: 0.328
+* 3 klaster: 0.437
+* 4 klaster: 0.474
+* 5 klaster: 0.518
+* 6 klaster: 0.549
+* 7 klaster: 0.590
+* 8 klaster: 0.621 (skor tertinggi)
+
+Dengan 8 klaster, Silhouette Score mencapai 0.621, yang merupakan nilai tertinggi. Ini menunjukkan  segmentasi data yang optimal.
+
+6\. Kemudian dari klasterisasi tersebut divisualisasikan menggunakan widget Scatter Plot.\
+\
+\
+![](/img/Workflow/Workflow-3/EX3-8.png)
+
+#### Kesimpulan:
+
+
+Scatter plot ini menunjukkan bagaimana pekerjaan alumni tersebar di berbagai lokasi. Dari gambar diatas dapat Kita simpulkan bahwa Kecenderungan Pekerjaan di Lokasi seperti : 
+
+*  Business Analyst (merah) banyak ditemukan di lokasi seperti Delhi.
+* Data Analyst (kuning) tersebar di beberapa lokasi, tetapi sebagian besar terkonsentrasi di area metropolitan.
+* Dari distribusi warna, pekerjaan seperti Data Analyst dan Business Analyst tampak lebih umum dibandingkan dengan pekerjaan spesifik seperti Blockchain Developer (biru). 
+
+#### Insight :
+
+* Lokasi seperti Delhi dan Mumbai adalah hotspot utama untuk pekerjaan teknologi dan bisnis.
+* Kampus dapat fokus pada pelatihan untuk pekerjaan populer seperti Data Analyst atau Business Analyst, karena permintaan di lokasi utama tampaknya tinggi.
+* Melakukan analisis lebih dalam pada pekerjaan yang lebih sedikit (seperti Blockchain Developer) untuk memahami potensi pertumbuhan atau peluang di masa depan.
